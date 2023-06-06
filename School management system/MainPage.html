@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>School management system</title>
+<link rel="icon" href="images/title_icon.ico">
+<script>
+	
+</script>
+<style>
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.containerdata {
+	background-image: url('images/background2.jpg');
+	background-repeat: no-repeat, repeat;
+	background-position: fixed;
+	width: 1325px;
+	height: 700px;
+	border: 2px solid black;
+	align-items: center;
+}
+
+h1 {
+	background-color: lightgray;
+	margin-top: 1%;
+	text-align: center;
+	width: auto;
+}
+
+.linkcontainer {
+	width: auto;
+	height: 40px;
+	float: right;
+}
+
+.btn {
+	height: 25px;
+	width: 70px;
+	font-size: 15px;
+	float: left;
+	border: 1px solid black;
+	background: transparent;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: white;
+	height: 30px;
+}
+
+.newuserdetails {
+	border: 1px solid black;
+	border-radius: 20px;
+	background: transparent;
+	width: 600px;
+	height: 380px;
+	padding-left: 50px;
+	margin-top: 100px;
+	margin-left: 350px;
+}
+
+.subsectionuserinfo {
+	width: 600px;
+	height: 50px;
+	border: 2px soild black;
+}
+
+.subdiv1 {
+	float: left;
+	height: 28px;
+	font-size: 25px;
+	width: 120px;
+	padding-top: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.subdiv2 {
+	float: left;
+	margin-left: 30px;
+	height: 40px;
+	width: 400px;
+}
+
+.input1 {
+	border: 2px solid black;
+	height: 30px;
+	width: 390px;
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+.adminaccount {
+	width: 150px;
+	height: 40px;
+	font-size: 20px;
+	margin-left: 80px;
+	margin-top: 20px;
+	background-color: transparent;
+}
+
+.adminaccount:hover {
+	background-color: white;
+}
+
+.info {
+	margin-top: 100px;
+	margin-left: 1000px;
+}
+
+.infoimg {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="containerdata">
+			<h1>Hello, Welcome to school management system</h1>
+			<div class="linkcontainer">
+				<input type="button" value="Home" class="btn"
+					onclick="window.location.href = 'MainPage.html';" /> <input
+					type="button" value="Add " class="btn"
+					onclick="window.location.href = 'Add_Account.html';" /> <input
+					type="button" value="Remove " class="btn"
+					onclick="window.location.href = 'Remove_Account.html';" /> <input
+					type="button" value="Update " class="btn"
+					onclick="window.location.href = 'Update_Account.html';" /> <input
+					type="button" value="Find " class="btn"
+					onclick="window.location.href = 'Find_Account.html';" /> <input
+					type="button" value="Exit " class="btn"
+					onclick="window.location.href = 'LoginPage.html';" />
+			</div>
+			<div class="newuserdetails">
+				<form class="memberdetails">
+					<h2>Sign up/New Admin Account</h2>
+					<section class="subsectionuserinfo">
+						<div class="subdiv1">User Name</div>
+						<div class="subdiv2">
+							<input type="text" class="input1" name="userid"
+								placeholder="Please enter user name" id="userid" />
+						</div>
+					</section>
+					<section class="subsectionuserinfo">
+						<div class="subdiv1">Address</div>
+						<div class="subdiv2">
+							<input type="text" class="input1" name="userid"
+								placeholder="Please enter user address " id="userid" />
+						</div>
+					</section>
+					<section class="subsectionuserinfo">
+						<div class="subdiv1">E-mail</div>
+						<div class="subdiv2">
+							<input type="email" class="input1" name="userid"
+								placeholder="Please enter user email " id="userid" />
+						</div>
+					</section>
+					<section class="subsectionuserinfo">
+						<div class="subdiv1">Mobile No.</div>
+						<div class="subdiv2">
+							<input type="text" class="input1" name="userid"
+								placeholder="Please enter user contact no  " id="userid" />
+						</div>
+					</section>
+					<section class="subsectionuserinfo">
+						<div class="subdiv1">Password</div>
+						<div class="subdiv2">
+							<input type="password" class="input1" name="userid"
+								placeholder="Please enter passward" id="userid" />
+						</div>
+						<br> <input type="submit" class="adminaccount" name="submit1"
+							value="Sign up">
+					</section>
+				</form>
+			</div>
+			<div class="info">
+				<img src="images/logo-facebook.svg" class="infoimg" width="20px"
+					height="20px"> <img src="images/logo-instagram.svg"
+					class="infoimg" width="20px" height="20px"> <img
+					src="images/mail-open-outline.svg" class="infoimg" width="20px"
+					height="20px"> <img src="images/mail-unread-outline.svg"
+					class="infoimg" width="20px" height="20px">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

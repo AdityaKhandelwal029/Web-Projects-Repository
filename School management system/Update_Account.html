@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>School management system</title>
+<link rel="icon" href="images/title_icon.ico">
+<script type="text/javascript"></script>
+<style type="text/css">
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.containerdata {
+	background-repeat: no-repeat, repeat;
+	background-position: fixed;
+	width: 1325px;
+	height: 725px;
+	border: 2px solid black;
+	align-items: center;
+	background-color: lightsteelblue;
+}
+
+h1 {
+	background-color: lightgray;
+	margin-top: 1%;
+	text-align: center;
+	width: auto;
+}
+
+.linkcontainer {
+	width: auto;
+	height: 40px;
+	float: right;
+}
+
+.btn {
+	height: 25px;
+	width: 70px;
+	font-size: 15px;
+	float: left;
+	border: 1px solid black;
+	background: transparent;
+	font-weight: bold;
+}
+
+.btn:hover {
+	background-color: lightblue;
+	height: 30px;
+}
+
+.container1 {
+	width: 500px;
+	height: 300px;
+	border-radius: 5px;
+	margin-top: 80px;
+	margin-left: 400px;
+	border: 1px solid black;
+}
+
+h2 {
+	text-align: center;
+	background-color: lightgray;
+}
+
+.subsection {
+	width: 500px;
+	height: 200px;
+	border-radius: 5px;
+}
+
+.label1 {
+	border-radius: 5px;
+	height: 60px;
+	margin-left: 10px;
+	font-size: 25px;
+}
+
+.input1 {
+	width: 300px;
+	height: 25px;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-left: 50px;
+	border: 1px solid black;
+}
+
+.optionclass {
+	width: 300px;
+	height: 30px;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-left: 25px;
+	border: 1px solid black;
+}
+
+.btn1 {
+	height: 35px;
+	width: 120px;
+	font-size: 20px;
+	float: left;
+	border: 1px solid black;
+	background: transparent;
+	font-weight: bold;
+	margin-left: 180px;
+}
+
+.btn1:hover {
+	background-color: lightblue;
+	height: 40px;
+}
+
+.result {
+	width: 500px;
+	height: 50px;
+	border-radius: 5px;
+	float: left;
+	border: 1px solid black;
+	font-size: 30px;
+	margin-left: 400px;
+	text-align: center;
+}
+
+.info {
+	margin-top: 200px;
+	margin-left: 1000px;
+}
+
+.infoimg {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="containerdata">
+			<h1>Hello, Welcome to school management system</h1>
+			<div class="linkcontainer">
+				<input type="button" value="Home" class="btn"
+					onclick="window.location.href = 'MainPage.html';" /> <input
+					type="button" value="Add " class="btn"
+					onclick="window.location.href = 'Add_Account.html';" /> <input
+					type="button" value="Remove " class="btn"
+					onclick="window.location.href = 'Remove_Account.html';" /> <input
+					type="button" value="Update " class="btn"
+					onclick="window.location.href = 'Update_Account.html';" /> <input
+					type="button" value="Find " class="btn"
+					onclick="window.location.href = 'Find_Account.html';" /> <input
+					type="button" value="Exit " class="btn"
+					onclick="window.location.href = 'LoginPage.html';" />
+			</div>
+
+			<div class="container1">
+				<h2>Update an account</h2>
+				<h2>Search by Id / Update</h2>
+				<section class="subsection">
+					<form>
+						<label for="userid" class="label1">User Id :</label> <input
+							type="text" class="input1" name="userid"
+							placeholder="Please enter userid" id="userid" /> <br> <br>
+						<label for="usertype" class="label1">User Type :</label> <select
+							class="optionclass" name="usertype" id="usertype">
+							<option value="Other">Other</option>
+							<option value="Teacher">Teacher</option>
+							<option value="Principal">Principal</option>
+							<option value="Student">Student</option>
+						</select> <br> <br> <input type="submit" class="btn1"
+							name="submit1" value="Search">
+					</form>
+				</section>
+			</div>
+			<div class="result"></div>
+			<div class="info">
+				<img src="images/logo-facebook.svg" class="infoimg" width="20px"
+					height="20px"> <img src="images/logo-instagram.svg"
+					class="infoimg" width="20px" height="20px"> <img
+					src="images/mail-open-outline.svg" class="infoimg" width="20px"
+					height="20px"> <img src="images/mail-unread-outline.svg"
+					class="infoimg" width="20px" height="20px">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
